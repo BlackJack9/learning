@@ -72,11 +72,11 @@ body{
     font-size: 40px;
     width: 60%;
     font-weight: normal;
-    margin-left: -1500px;
+    margin-left: -1200px;
 }
 
 #section3 p{
-    margin: 20px auto 0;
+    margin: 20px auto 5px;
     color: #333333;
     font-size: 18px;
     width: 60%;
@@ -95,6 +95,8 @@ body{
 
 #section4 h1{
     margin: 20px auto;
+    position: relative;
+    top: -500px;
     color: #333333;
     font-size: 40px;
     font-weight: normal;
