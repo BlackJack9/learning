@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: 16px/1.8 "Microsoft Yahei";
+}
+
+.section{
+    position: relative;
+    background: #ffffff;
+    overflow: hidden;
+    text-align: center;
+}
+
+#section1{
+    background: url("../img/hero_sunset_large_2x.jpg") no-repeat bottom;
+    background-size: cover;
+}
+
+#section1 h1{
+    margin-top: 5%;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 50px;
+    opacity: 0.8;
+}
+
+#section1 p{
+    margin: 5% auto 0;
+    color: #ffffff;
+    font-size: 18px;
+    width: 80%;
+    opacity: 0.6;
+    margin-top: 800px;
+}
+
+#section1 a{
+    display: block;
+    margin: 5% auto;
+    color: #ffb23d;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+#section2{
+    background: #f2f2f2 url("../img/technology_hero_large_2x.jpg") no-repeat bottom;
+    background-size: 100%;
+}
+
+#section2 h1{
+    margin: 20px auto;
+    color: #333333;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+#section2 a{
+    margin: 20px auto;
+    color: #77b2ff;
+}
+
+#section3{
+    background: #ffffff url("../img/timekeeping_hero_large_2x.jpg") no-repeat center 300px;
+    background-size: 50%;
+}
+
+#section3 h1{
+    margin: 20px auto;
+    color: #333333;
+    font-size: 40px;
+    width: 60%;
+    font-weight: normal;
+    margin-left: -1500px;
+}
+
+#section3 p{
+    margin: 20px auto 0;
+    color: #333333;
+    font-size: 18px;
+    width: 60%;
+    margin-left: 1500px;
+}
+
+#section3 a{
+    font-size: 18px;
+    margin: 20px auto;
+    color: #08c;
+}
+
+#section4{
+    background: #ffffff;
+}
+
+#section4 h1{
+    margin: 20px auto;
+    color: #333333;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#section4 .row{
+    width: 95%;
+    margin-left: 20px;
+    color: #333333;
+    font-size: 18px;
+}
+
+#section4 .column{
+    float: left;
+    display: inline-block;
+    width: 31%;
+    padding-bottom: 30px;
+    margin: 10px;
+    margin-top: 5%;
+    background-color: #f2f2f2;
+}
+
+#section4 .column img{
+    height: 300px;
+    margin-top: 30px;
+}
+
+#section4 .column h4{
+    margin: 20px auto 0;
+}
+
+#section4 .column h4.primary{
+    background: url("../img/logo_collection_primary.svg") no-repeat;
+    background-size: 102px 22px;
+    height: 22px;
+    width: 102px;
+}
+
+#section4 .column h4.sport{
+    background: url("../img/logo_collection_sport.svg") no-repeat;
+    background-size: 178px 22px;
+    height: 22px;
+    width: 178px;
+}
+
+#section4 .column h4.edition{
+    background: url("../img/logo_collection_edition.svg") no-repeat;
+    background-size: 190px 22px;
+    height: 22px;
+    width: 190px;
+}
+
+#section4 .column .intro p{
+    margin: 10px auto 0;
+}
+
+#section4 .column .intro a{
+    color: #08c;
+    margin: 10px auto 0;
+    font-size: 16px;
+}

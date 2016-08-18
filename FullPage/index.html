@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale = 1,user-scalable =no"/>
+    <title>FullPage</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+
+</head>
+<body>
+<!--<ul id="menu">-->
+<!--<li data-menuanchor = 'page1' class="active"><a href="#page1">1 section</a></li>-->
+<!--<li data-menuanchor = 'page2'><a href="#page2">2 section</a></li>-->
+<!--<li data-menuanchor = 'page3'><a href="#page3">3 section</a></li>-->
+<!--<li data-menuanchor = 'page4'><a href="#page4">4 section</a></li>-->
+<!--</ul>-->
+<div class="container">
+    <section class="section" id="section1">
+        <h1>它，终于来了。</h1>
+
+        <p>为了充分发挥体积小巧以及佩戴于手腕的优势，Apple Watch带来了全新的科技与互动方式。
+            它可以让你更快速便捷地完成一些早已习惯的事，也可实现过去根本无法企及的新功能。
+            因此，它将会是焕然一新的使用体验，也将实现你前所未有的贴切。</p>
+        <a href="#">进一步了解</a>
+    </section>
+    <section class="section" id="section2">
+        <h1>真正贴近你的个人设备</h1>
+        <a href="#">进一步了解</a>
+    </section>
+    <section class="section" id="section3">
+        <h1>非同一般的精准计时</h1>
+
+        <p>为了充分发挥体积小巧以及佩戴于手腕的优势，Apple Watch带来了全新的科技与互动方式。
+            它可以让你更快速便捷地完成一些早已习惯的事，也可实现过去根本无法企及的新功能。
+            因此，它将会是焕然一新的使用体验，也将实现你前所未有的贴切。</p>
+        <a href="#">进一步了解计时</a>
+    </section>
+    <section class="section" id="section4">
+        <h1>在三个特色鲜明的系列中找到你的风格</h1>
+
+        <div class="row">
+            <div class="column">
+                <img src="img/primary_large_2x.jpg" class="primary"/>
+                <h4 class="primary"></h4>
+
+                <div class="intro">
+                    <p>不锈钢或深黑色不锈钢表壳，蓝宝石水晶带。</p>
+                    <a href="#">了解更多</a>
+                </div>
+            </div>
+            <div class="column">
+                <img src="img/sport_large_2x.jpg" class="sport"/>
+                <h4 class="sport"></h4>
+
+                <div class="intro">
+                    <p>不锈钢或深黑色不锈钢表壳，蓝宝石水晶带。</p>
+                    <a href="#">了解更多</a>
+                </div>
+            </div>
+            <div class="column">
+                <img src="img/edition_large_2x.jpg" class="edition"/>
+                <h4 class="edition"></h4>
+
+                <div class="intro">
+                    <p>不锈钢或深黑色不锈钢表壳，蓝宝石水晶带。</p>
+                    <a href="#">了解更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    $(function () {
+        $('.container').fullpage({
+//                sectionsColor:['orange','cornflowerblue','salmon','silver'],
+//                anchors:['page1','page2','page3','page4'],
+////                lockAnchors:true,
+//                paddingTop:'100px',
+//                continuousVertical:true,
+//                continuousHorizontal:true,
+////                menu:'#menu'
+//                navigation:true,
+//                navigationPosition:'right',
+//                navigationTooltips:['page1','page2','page3','page4'],
+//                showActiveTooltip:true,
+//                slidesNavigation:true,
+            verticalCentered: false,
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            navigation: true,
+            navigationTooltips: ['page1', 'page2', 'page3', 'page4'],
+            afterLoad: function (anchorLink, index) {
+                switch (index) {
+                    case 1:
+                    {
+                        var section1 = $('#section1');
+                        section1.find('h1').animate({
+                            'font-size': '70px'
+                        }, 1000);
+                        section1.find('p').animate({
+                            'margin-top': '100px'
+                        }, 1000);
+                    }
+                        break;
+                    case 2:
+                    {
+                        var section2 = $('#section2');
+                        section2.find('h1').animate({
+                            'font-size': '45px'
+                        }, 500);
+                    }
+                        break;
+                    case 3:
+                    {
+                        var section3 = $('#section3');
+                        section3.find('h1').animate({
+                            'margin-left':'20%',
+                        }, 800);
+                        section3.find('p').animate({
+                            'margin-left': '20%'
+                        }, 800);
+                    }
+                        break;
+
+                }
+            },
+            onLeave: function (anchorLink, index) {
+                switch (index) {
+                    case 1:
+                    {
+                        var section1 = $('#section1');
+                        section1.find('h1').css({
+                            'font-size': '45px'
+                        });
+                        section1.find('p').css({
+                            'margin-top': '800px'
+                        });
+                    }
+                        break;
+                    case 2:
+                    {
+                        var section2 = $('#section2');
+                        section2.find('h1').css({
+                            'font-size': '60px'
+                        }, 500);
+                    }
+                        break;
+
+                    case 3:
+                    {
+                        var section3 = $('#section3');
+                        section3.find('h1').css({
+                            'margin-left': '-1500px'
+                        });
+                        section3.find('p').css({
+                            'margin-left': '1500px'
+                        });
+                    }
+                        break;
+                }
+            }
+        });
+    })
+</script>
+</body>
+</html>
