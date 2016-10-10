@@ -1,2 +1,2 @@
 # own-project
-learning~
+Learning~
